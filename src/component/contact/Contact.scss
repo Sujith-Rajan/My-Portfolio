@@ -1,0 +1,64 @@
+@import '../../app.scss';
+
+.contact{
+    height: 100%;
+    max-width: 1266px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .textContainer{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        h1{
+            font-size: 100px;
+            line-height: 88px;
+            background: #B8E1FC;
+            background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        span{
+            font-weight: 300;
+        }
+    }
+    .formContainer{
+        flex: 1;
+        position: relative;
+        .phoneSvg{
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            input,textarea{
+                padding: 20px;
+                background-color: transparent;
+                border:1px solid white;
+                color: white;
+                border-radius: 5px;
+            }
+            button{
+                padding: 20px;
+                border: none;
+                box-shadow:inset 0px 1px 0px 0px #0a3762;
+	            background:linear-gradient(45deg, #0C0C1D , #60677A);
+	            background-color:#bddbfa;
+                color: white;
+              
+                cursor:pointer;
+                font-size: 20px;
+                font-weight: 700;
+
+            }
+        }
+    }
+}

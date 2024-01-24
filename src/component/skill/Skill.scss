@@ -1,0 +1,120 @@
+@import '../../app.scss';
+
+.skills{
+    height: 100%;
+    background: linear-gradient(180deg, #0c0c1d ,#111132);
+    width: 100%;
+    .wrapper{
+        margin: auto;
+       max-width: 1266px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        .aboutLeft{
+            flex: 2;
+            padding: 20px;
+            position: relative;
+           
+            h1{
+                font-size: 70px;
+                background: #008080;
+                background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                
+
+                
+            }
+            .border{
+                border: 0px solid  rgb(148, 148, 248);
+                border-radius: 10px;
+                width: 50%;
+                display: flex ;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                .skillBox{
+                    margin: 20px;
+                    border: 2px solid rgb(148, 148, 248);
+                    border-radius: 10px;
+                    width: 40%;
+                    height: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center; 
+                    font-size: larger;
+                    position: relative;
+                    cursor: pointer;
+                    &:hover,&.active{
+                        background: linear-gradient(180deg,rgb(92, 92, 250),rgb(55, 55, 104));
+                    }
+                    
+                    .icon{
+                        position: absolute;
+                        font-size: 32px;
+                        padding: 5px;
+                        color: rgb(170, 170, 245);
+                        border: 2px solid rgb(255, 255, 255);
+                        border-radius: 5px;
+                        background-color: rgba(70, 70, 251, 0.733);
+                        top: 0;
+                        left: 0;
+                    }
+                   }
+            }
+           
+        }
+        .aboutRight{
+            flex: 2;
+            display:flex;
+            justify-content: center;
+          
+            .skillDetails{
+                border: 2px solid rgb(148, 148, 248);
+                width: 50%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                border-radius: 15px;
+            }
+            h2{
+                color: rgb(148, 148, 248);
+                text-align: center;
+            }
+            li{
+                list-style: none;
+                line-height: 30px;
+                margin-left: 20px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+       
+    }
+    .wrapperImg{
+        margin: auto;
+       max-width: 1266px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        img:nth-child(2n+1){
+            animation: move 3s infinite ease alternate;
+         }    
+         img:nth-child(2n){
+            animation: move 2.5s infinite ease alternate;
+         }    
+    }
+}
+
+@keyframes move{
+    from{
+        transform: translateY(-15px);
+    }
+    to{
+        transform: translateY(15px);
+    }
+}

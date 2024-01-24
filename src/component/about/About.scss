@@ -1,0 +1,54 @@
+@import '../../app.scss';
+
+.about{
+    background: linear-gradient(180deg,#111132, #0c0c1d );
+    height: 100%;
+    width: 100%;
+    .wrapper{
+        margin: auto;
+       max-width: 1266px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        gap: 100px;
+        .aboutLeft{
+            flex: 2;
+            height: 100%;
+            h1{
+                font-size: 70px;
+                background: #008080;
+                background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-left: 20px;
+            }
+            .underline{
+                width: 250px;
+                height: 4px;
+                background-color: rgb(255, 255, 255);
+                margin-left: 20px;
+            }
+            p{
+                margin-top: 20px;
+                letter-spacing: 2px;
+                line-height: 30px;
+                font-size: 22px;
+                text-align: justify;
+                padding: 10px;
+            }
+           
+        }
+        .aboutRight{
+            flex: 1;
+            display: flex;
+            img{
+                width: 400px;
+                height: 350px;
+                
+                margin-left: 40px;
+
+            }
+        }
+    }
+}

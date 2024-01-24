@@ -1,0 +1,109 @@
+@import '../../app.scss';
+
+.experience {
+    background: linear-gradient(10deg, #111132, #0c0c1d);
+    height: 100%;
+
+    .wrapper {
+        max-width: 1266px;
+        height: 100%;
+        margin: auto;
+        position: relative;
+
+        .experienceTitle {
+            position: sticky;
+            top: 0;
+            font-size: 70px;
+            background: #008080;
+            background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .experienceWorks {
+            margin-top: 30px;
+             padding-bottom: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 40px;
+            height:100vh;
+            overflow: scroll;
+
+            &::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            .experienceCard {
+                position: relative;
+                width: 350px;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                background-color: #282c34;
+                background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+                box-shadow: 0 7px 20px 5px #00000088;
+                border-radius: .7rem;
+                backdrop-filter: blur(7px);
+                -webkit-backdrop-filter: blur(7px);
+                border-radius: 10px;
+
+                .expImg {
+                    width: 300px;
+                    height: 200px;
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 10px;
+                }
+
+                .hoverText {
+                    position: absolute;
+                    background-color: rgba(20, 17, 17, 0.821);
+                    width: 300px;
+                    height: 250px;
+                    top: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    padding: 5px;
+                    text-align: justify;
+                    overflow: scroll;
+                    opacity: 0;
+                    transition: transform 0.3s ease, opacity 0.3s ease;
+
+                    &::-webkit-scrollbar {
+                        width: 0px;
+                    }
+
+                }
+
+
+                .url {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 15px;
+                    cursor: pointer;
+
+                }
+
+                .stack {
+
+                    display: flex;
+                    gap: 15px;
+                    flex-wrap: wrap;
+                    margin: 15px;
+                    .label {
+                       
+                        background-color: rgba(0, 0, 0, 0.407);
+                        padding: 5px;
+                        border-radius: 5px;
+                    }
+                }
+
+            }
+        }
+    }
+}
